@@ -24,22 +24,22 @@ function output(time){
 	return n
 }
 
+if (t1 >=1 && t2<=100000){
+	if (h)
+		string = h+hour[output(h)]+' ';
+	else
+		string += '';
 
-if (h)
-	string = h+hour[output(h)]+' ';
-else
-	string += '';
-
-if (m)
-	string += m+minute[output(m)]+' ';
-else
-	string += '';
+	if (m)
+		string += m+minute[output(m)]+' ';
+	else
+		string += '';
 
 
-if (s)
-	string += s+second[output(s)]+' ';
-else
-	string += '';
+	if (s)
+		string += s+second[output(s)]+' ';
+	else
+		string += '';
 
-console.log(string);
-
+	console.log(string);
+}
