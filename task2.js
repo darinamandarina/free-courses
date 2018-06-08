@@ -7,14 +7,12 @@ let ch_arr = [];
 let encr_str =  '';
 
 const encryption = function(){
-	for(let i=0; i<n; i++){
-		if (s.charCodeAt(i)<=127 && n>=1 && n<=10000 && k>=1 && k<=10000){
+	for(let i=0; i<n; i++){		
 			ch_arr.push(s.charCodeAt(i));
 			if( (s.match(/[a-zA-Z]/g)[i] != null)){
 				ch_arr[i]=ch_arr[i]+k;			
 			}
 			encr_str += String.fromCharCode(ch_arr[i]);	
-		}
 	}
 	console.log(encr_str);	
 };
