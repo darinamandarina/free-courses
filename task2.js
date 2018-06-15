@@ -4,7 +4,7 @@ let s = process.argv[2];
 let k = Number(process.argv[3]);
 let n = s.length;
 let encr_str =  '';
-var alf = "abcdefghijklmnopqrstuvwxyz";
+let alf = "abcdefghijklmnopqrstuvwxyz";
 let a_len = alf.length;
 function encryption(){
     for (let i=0; i < n; i++)
